@@ -1,0 +1,16 @@
+.post-featured-image {
+	background-position: center center;
+	background-size: cover;
+	margin: 30px 0;
+	max-height: 600px;
+	min-height: 200px;
+	width: 100%;
+}
+
+.entry-meta {
+	@include font(1.6rem);
+}
+
+.uabb-social-share-wrap .uabb-ss-grid-button {
+	font-size: 8px;
+}

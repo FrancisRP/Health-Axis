@@ -1,0 +1,50 @@
+/* 
+ * Custom styles for infobox modules
+ *
+ * (apply .hive--infobox directly to any infobox module)
+ */
+
+.hive--infobox {
+	.uabb-infobox {
+		box-shadow: 0 4px 40px $box-shadow-color;
+	}
+
+	// image
+	.uabb-imgicon-wrap .uabb-image {
+		padding-bottom: 65%;
+		height: 0;
+		background: $primary;
+	}
+
+	.uabb-imgicon-wrap .uabb-image-content {
+		position: absolute;
+		width: 100%!important;
+		height: 100%!important;
+		left: 0;
+		top: 0;
+	}
+
+	.uabb-imgicon-wrap .uabb-image-content img {
+		@extend .cover-image;
+		z-index: 1;
+		transition: all 0.3s ease;
+	}
+
+	// image infobox content layout styles
+	&.img-infobox {
+		.uabb-infobox-title-wrap {
+			padding: 30px 30px 0;
+		}
+
+		.uabb-infobox-text-wrap {
+			padding: 0 30px 30px;
+		}
+	}
+
+	//hover styles
+	&:hover, &:focus  {
+		.uabb-imgicon-wrap .uabb-image-content img {
+			opacity: 0.5;
+		}
+	}
+}

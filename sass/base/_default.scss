@@ -1,0 +1,202 @@
+// -------------------
+// Default theme configuration & setup. Contains commonly used default styles for any typical project.
+// These styles may safely be removed/overwritten when starting a new project.
+// -------------------
+
+// --------------- HTML ELEMENTS
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #839A74;
+	text-decoration: underline;
+}
+
+// --------------- SITE LAYOUT
+
+#hero {
+	.fl-row-content {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.page-banner {
+	position: relative;
+	.fl-row-content-wrap {
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.3);
+		}
+	}
+	@include mq('tablet-wide') {
+		.fl-row-content-wrap {
+			&:before {
+				content: "";
+			    background-image: url(/wp-content/uploads/2023/09/banner-overlay.png);
+			    background-size: 100%;
+			    background-position: left center;
+				background-color: transparent;
+			    position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    z-index: 1;
+			    background-repeat: no-repeat;
+			    top: 0;
+			    left: -10%;
+			}
+		}
+	}
+	.fl-row-content {
+		position: relative;
+		z-index: 10;
+		h1 *, p {
+			@include mq('tablet-wide') {
+				color: $primary !important;
+			}
+		}
+	}
+}
+
+.container {
+	position: relative;
+}
+
+.section {
+	padding: 60px 0;
+}
+
+
+body:not(.home) {
+
+	.page {
+		&__content {
+			//padding-top: 60px;
+		}
+	}
+
+}
+
+.site-content {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	&:before {
+		content: "";
+		background: #a1c2e2;
+		background: -moz-radial-gradient(center, ellipse cover,  #a1c2e2 0%, #ffffff 50%);
+		background: -webkit-radial-gradient(center, ellipse cover,  #a1c2e2 0%,#ffffff 50%);
+		background: radial-gradient(ellipse at center,  #a1c2e2 0%,#ffffff 50%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1c2e2', endColorstr='#ffffff',GradientType=1 );
+		position: fixed;
+		bottom: 0;
+		left: -6em;
+		width: 60%;
+		height: 60%;
+		opacity: 0.5;
+		@include mq('desktop') {
+			position: absolute;
+			bottom: -20%;
+			left: 0;
+			width: 50%;
+			height: 50%;
+		}
+	}
+	&:after {
+		content: "";
+		background: #b0bda5;
+		background: -moz-radial-gradient(center, ellipse cover,  #b0bda5 0%, #ffffff 50%);
+		background: -webkit-radial-gradient(center, ellipse cover,  #b0bda5 0%,#ffffff 50%);
+		background: radial-gradient(ellipse at center,  #b0bda5 0%,#ffffff 50%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0bda5', endColorstr='#ffffff',GradientType=1 );
+		position: fixed;
+		bottom: 50%;
+		right: -10em;
+		width: 60%;
+		height: 60%;
+		opacity: 0.5;
+		@include mq('desktop') {
+			position: absolute;
+			bottom: -15%;
+			width: 50%;
+			height: 50%;
+			right: 0;
+		}
+	}
+	.site-main, .fl-builder-content {
+		position: relative;
+		z-index: 5;
+	}
+}
+
+.search-results {
+	.site-main {
+		padding: 60px 0;
+	}
+	.page-header {
+		margin-bottom: 30px;
+	}
+}
+
+.sidebar {
+	.widget {
+		margin-bottom: 30px;
+	}
+}
+
+
+.site-footer {
+	color: #fff;
+	padding: 20px 0;
+	.widgettitle, h2 {
+		@extend .h3;
+	}
+	.menu {
+		padding: 0;
+		li {
+			list-style: none;
+			a {
+				&:hover {
+					color: $text-light;
+				}
+			}
+		}
+		.sub-menu {
+			display: none;
+		}
+	}
+}
+
+.fl-rich-text a {
+	color: #839A74 !important;
+	text-decoration: underline !important;
+	* {
+		color: #839A74 !important;
+	}
+}
+
+.fl-module-info-list {
+	.uabb-info-list {
+		.uabb-info-list-top {
+			.uabb-info-list-item {
+				@include mq('tablet') {
+					width: 50%;
+					margin-bottom: 50px;
+				}
+				@include mq('desktop') {
+					width: 25%;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

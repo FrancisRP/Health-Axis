@@ -1,0 +1,16 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $base-font-family;
+	font-weight: $base-font-weight;
+	line-height: $base-line-height;
+	position: relative;
+	overflow-x: hidden !important;
+	@include font(2rem);
+}
+
+h1 {
+	margin-top: 0;
+}

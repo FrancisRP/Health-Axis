@@ -1,0 +1,29 @@
+/*
+ * Custom styles for testimonial slider
+ *
+ * (apply .hive--testimonial-slider to UABB Advanced Posts module)
+ * (apply .testimonial--single inside custom post layout template within UABB Advanced Post options)
+ */
+
+.hive--testimonial-slider {
+  .testimonial {
+    padding: 20px;
+    &__quote {
+      margin-bottom: 20px;
+      color: $text-light;
+      font-style: italic;
+    }
+    &__author {
+      @include font(2rem);
+      color: $text-light;
+    }
+    &__author-title {
+        color: $text-light;
+    }
+    &__rating {
+        img {
+            margin: 0 auto 20px;
+        }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.site-footer {
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    .social-links {
+        a {
+            color: #fff;
+            margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            background: $primary;
+            font-size: 16px;
+            &:hover {
+                background: $tertiary;
+            }
+        }
+    }
+    .footer-menu {
+        li {
+            a {
+                padding-left: 0;
+                padding-bottom: 10px;
+                @include font(1.8rem);
+                color: $text-dark;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        border-top: 1px solid #E5E5E5;
+        padding-top: 20px;
+        p {
+            color: $text-dark;
+        }
+    }
+}

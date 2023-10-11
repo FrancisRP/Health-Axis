@@ -1,0 +1,41 @@
+//--------- Font Weights --------------------
+
+$light: 300;
+$regular: 400;
+$semibold: 500;
+$bold: 600;
+$superbold: 800;
+
+//--------- Responsive font --------------------
+
+$base-font-size: 20px; // Base Font
+$mobile-font-size: 16px; // should be smaller
+
+$base-font-family: 'Urbanist', sans-serif;
+$base-font-weight: $regular;
+$base-line-height: 27px;
+$mobile-line-height: 24px;
+
+//--------- Main Colors --------------------
+
+$primary: #2A476C;
+$secondary: #09A34F;
+$tertiary: #A5B498;
+
+$text-dark: #333;
+$text-light: #fff;
+
+$color-light: #fff;
+$color-med: #BDBDBD;
+$color-dark: #979797;
+
+$box-shadow-color: rgba(0, 0, 0, .16);
+
+$main-footer-color: #5a6276;
+$main-footer-dark: #495061;
+
+//--------- Transition Speeds --------------------
+
+$fast: 150ms;
+$medium: 250ms;
+$slow: .5s;

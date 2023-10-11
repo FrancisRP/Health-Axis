@@ -1,0 +1,20 @@
+.blog-featured {
+    .uabb-blog-post-inner-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+.blog-grid {
+    .uabb-blog-posts-shadow {
+        border-radius: 15px;
+    }
+    .uabb-post-thumbnail {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .uabb-blog-posts-description {
+        padding-top: 1em;
+    }
+}

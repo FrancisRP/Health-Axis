@@ -1,0 +1,83 @@
+{
+    "key": "group_6098a68fed1e9",
+    "title": "Team Member Info",
+    "fields": [
+        {
+            "key": "field_6098a6900ebf3",
+            "label": "Title\/Position",
+            "name": "team_member_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6098a6900ebfd",
+            "label": "Bio",
+            "name": "team_member_bio",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_6098a74157865",
+            "label": "Social",
+            "name": "team_member_social",
+            "type": "wysiwyg",
+            "instructions": "Using hard coded HTML\/fontawesome for this section to offer developers more control over order and content of social media icons (or lack thereof). Example Content is provided to streamline the process of getting social set up.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<ul class=\"team-member--social\">\r\n\t<li><a href=\"#\"><i class=\"fa fa-facebook\"><\/i> <span class=\"screen-reader-text\">Facebook<\/span><\/a><\/li>\r\n\t<li><a href=\"#\"><i class=\"fa fa-twitter\"><\/i> <span class=\"screen-reader-text\">Twitter<\/span><\/a><\/li>\r\n<\/ul>",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "team"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1620623387
+}

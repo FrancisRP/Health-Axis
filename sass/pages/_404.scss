@@ -1,0 +1,44 @@
+
+.not-found {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+
+	.page-404-title {
+		color: $primary;
+		font-size: 120px;
+		margin: 0;
+	}
+
+	.page-404-explain {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	form {
+		label span {
+			display: none;
+		}
+
+		input[type="search"] {
+			background: #eee;
+			border: 0;
+			border-radius: 4px;
+			font-size: 18px;
+			font-weight: lighter;
+			padding: 8px 12px;
+		}
+
+		input[type="submit"] {
+			background: #eee;
+			border: 0;
+			border-radius: 4px;
+			font-size: 18px;
+			font-weight: lighter;
+			padding: 8px 12px;
+		}
+	}
+}

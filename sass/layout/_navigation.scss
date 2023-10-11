@@ -1,0 +1,74 @@
+.menu {
+	li.social-menu-links {
+		.sub-menu {
+			.menu-item-text {
+				display: flex;
+				i {
+					width: 20px !important;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	#menu-item-1497 {
+		display: block;
+		@include mq(tablet-small) {
+			display: none ;
+		}
+	}
+}
+
+.uabb-creative-menu.off-canvas {
+	.uabb-off-canvas-menu {
+		.uabb-menu-close-btn {
+			color: #fff;
+		}
+	}
+}
+
+#menu-main-menu-1 {
+	#menu-item-1496,
+	#menu-item-1497 {
+		display: flex;
+		align-items: center;
+		background-color: $secondary !important;
+		color: $white;
+		text-transform: capitalize !important;
+		font-weight: $bold!important;
+		padding: 10px 16px !important;
+		border: 0 !important;
+		font-weight: $bold!important;
+		border-radius: 4px !important;
+		margin-top:	10px;
+		text-transform: uppercase;
+		cursor: pointer;
+		@include font(2rem);
+		@include transition(fast);
+
+		&:after {
+			content: "\f0da";
+			font-family: "Font Awesome 5 Free";
+			display: inline;
+			color: $white;
+			margin-left: 5px;
+			text-align: right;
+		}
+
+		* {
+			color: $white !important;
+		}
+
+		&:hover {
+			background: #15703e !important;
+			* {
+				color: $white  !important;
+			}
+		}
+
+		a {
+			width: 100%;
+			text-align: left;
+		}
+	}
+}

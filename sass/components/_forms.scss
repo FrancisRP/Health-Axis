@@ -1,0 +1,89 @@
+.gform_wrapper {
+    .gform_heading {
+        display: none;
+    }
+    .gform_body {
+        .gfield {
+            .gfield_label {
+                @include font(1.9rem !important);
+                margin-bottom: 10px;
+                color: #203B56;
+                font-weight: 400;
+                line-height: 1.2;
+            }
+            .ginput_container {
+                input:not([type="checkbox"]),
+                select,
+                textarea {
+                    margin-top: 0 !important;
+                    border-radius: 4px;
+                    outline: none;
+                    width: 100%;
+                    background: #D4D2CA;
+                    color: #000;
+                }
+            }
+            .gfield_required {
+                display: none;
+            }
+        }
+    }
+    .gform_footer {
+        justify-content: center;
+    }
+}
+
+
+#gform_wrapper_9 {
+    #gform_9 {
+        max-width: 747px;
+        margin: 0 auto;
+        .gform_body {
+            .gfield {
+                .ginput_container {
+                    input,
+                    select,
+                    textarea {
+                        background-color: #D4D2CA;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-form {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        background: radial-gradient(100.64% 65.98% at 23.55% 53.78%, #99BADB 0%, #B9D1EA 0, #FFF 75%);
+        bottom: 0;
+        left: 0;
+        mix-blend-mode: darken;
+        width: 50%;
+        height: 40%;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        opacity: 0.74;
+        background: radial-gradient(100% 97% at 80%, #B0BDA5 0, #FFF 53%);
+        bottom: 0;
+        right: 0;
+        mix-blend-mode: darken;
+        width: 50%;
+        height: 40%;
+    }
+}
+
+// Schedule Discovery Call form (full form page - /schedule-a-discovery-call/)
+#gform_wrapper_16 {
+    .gfield {
+        &--type-checkbox {
+            margin-bottom: 32px;
+        }
+    }
+}
+
